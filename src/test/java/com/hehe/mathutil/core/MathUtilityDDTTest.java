@@ -25,7 +25,7 @@ class MathUtilityDDTTest {
     }
 
     @ParameterizedTest
-    @MethodSource("initData") //DDT
+    @MethodSource("initData") //DDT - Data Driven Testing
     public void testFactorialGivenRightAgrumentReturnsWell(int n, long expectedResult){
         assertEquals(expectedResult, getFactorial(n));
         //                  5! hy vọng trả về 120
